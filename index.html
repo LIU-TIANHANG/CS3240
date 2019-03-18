@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/News-Cards.css">
+    <link rel="stylesheet" href="assets/css/sidebar-1.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu-1.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/smoothproducts.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+            <div class="row" >
+            <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+            <a class="navbar-brand logo" href="#">NUS EduRec</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Logout</a></li>
+                </ul>
+            </div>
+        
+         </nav>
+        </div>
+        <div class="row" style="margin-top: 80px">
+            <div class="col-md-2">
+                <ul class="sidebar-nav">
+                            <li class="sidebar-brand"><a href="#">Home </a></li>
+                            <li><a href="#">Dashboard </a></li>
+                            <li><a href="#">Dashboard </a></li>
+                            <li><a href="#">Dashboard </a></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                  <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle btn-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    View Examination Result
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#"><div class="row">Please refer to the instructions sent by the Yale-NUS Registry) <br />
+                                                    The Satisfactory/Unsatisfactory (S/U) Option Declaration exercise for Semester 1,  <br />AY2018/19 will be held upon results release from 26 December 2018 to 28 December 2018, 6pm. Please check your email dated 11 Dec 2018 for further information.</div></a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                    <button class="open-button" onclick="openForm()">Chat</button>
+
+                    <div class="chat-popup" id="myForm">
+                      <form action="/action_page.php" class="form-container">
+                        <h1>Chat</h1>
+
+                        <label for="msg"><b>Message</b></label>
+                        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+                        <button type="submit" class="btn">Send</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                      </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="page-content-wrapper"></div>
+    </div>
+    <main class="page landing-page" style="color: #275B8A;"></main>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/smoothproducts.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Sidebar-Menu.js"></script>
+    <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
+
+</html>
