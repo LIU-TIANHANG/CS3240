@@ -1,10 +1,20 @@
 	<!DOCTYPE html>
 	<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Nus EduRec</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    
+        <script src="https://code.iconify.design/1/1.0.0-rc7/iconify.min.js"></script>
 
-	<head>
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	    <title>Home - Brand</title>
+</head>
 
 	    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
@@ -26,6 +36,37 @@
 	</head>
 
 	<body>
+    <div class="container-fluid">
+        <div class="header"> 
+            <a href="index.html">
+                <img id="nuslogo" src="assets/img/nuslogo.png" alt="NUS Logo" height="45" width="110"> 
+                
+                <span class="iconify" data-icon="simple-line-icons:logout" data-inline="false"></span>
+            </a>
+        </div>
+        <div class="row" style="margin-top: 80px">
+            <div class="col-md-2">
+                <div class="w3-sidebar w3-bar-block" style="width:20%; text-decoration-color: white; background-color: #275C88"> 
+  <a href="#" class="w3-bar-item w3-button w3-text-white">Personal Info</a>
+  <a href="#" class="w3-bar-item w3-button w3-text-white">Academics</a>
+  <a href="#" class="w3-bar-item w3-button w3-text-white">Financial</a>
+                    <a href="#" class="w3-bar-item w3-button w3-text-white">Verify Critical Data</a>
+</div>
+            </div>
+            <div class="col-md-8">
+                  <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle btn-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:orange;">
+                    View Examination Result
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#"><div class="row">Please refer to the instructions sent by the Yale-NUS Registry) <br />
+                                                    The Satisfactory/Unsatisfactory (S/U) Option Declaration exercise for Semester 1,  <br />AY2018/19 will be held upon results release from 26 December 2018 to 28 December 2018,<br /> 6pm. Please check your email dated 11 Dec 2018 for further information.</div></a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                    <button class="open-button" onclick="openForm()">Chat</button>
 
 	    <div class="container-fluid">
 	        <div class="row" >
@@ -72,6 +113,7 @@
 	        	</div>
 	        	<div class="col-md-6">
 	        		 	<button class="open-button" id="chatBotButton"><img src='image/chatbotIcon.png' id='chatbotImage'>Chat with me</button>
+
 
 	                    <div class="chat-popup" id="myForm">
 	                    	<button type="button" class="btn btn-secondary pull-right" id='chatbotMinButton'>-</button>
