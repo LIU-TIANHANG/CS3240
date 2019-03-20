@@ -22,6 +22,19 @@ router.get('/newStudent',(req,res)=>{
     res.render('content/newStudent');
 });
 
+router.get('/su',(req,res)=>{
+    res.render('content/su');
+});
+
+router.get('/graduation',(req,res)=>{
+    res.render('content/graduation');
+});
+router.get('/examSchedule',(req,res)=>{
+    res.render('content/examSchedule');
+});
+
+
+
 
 
 module.exports = router;
