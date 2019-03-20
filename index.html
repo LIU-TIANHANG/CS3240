@@ -31,18 +31,53 @@
     <div class="container-fluid">
         <div class="header"> 
             <a href="index.html">
-                <img id="nuslogo" src="assets/img/nuslogo.png" alt="NUS Logo" height="45" width="110"> 
+                <img id="nuslogo" src="assets/img/nuslogo.png" alt="NUS Logo" height="100%" width="200"> 
                 
-                <span class="iconify" data-icon="simple-line-icons:logout" data-inline="false"></span>
+                <span class="iconify" id="help" data-icon="simple-line-icons:question" data-inline="false"></span>
+                <span class="iconify" id="logout" data-icon="simple-line-icons:logout"></span>
             </a>
         </div>
         <div class="row" style="margin-top: 80px">
             <div class="col-md-2">
                 <div class="w3-sidebar w3-bar-block" style="width:20%; text-decoration-color: white; background-color: #275C88"> 
- 		 <a href="#" class="w3-bar-item w3-button w3-text-white">Personal Info</a>
- 		 <a href="#" class="w3-bar-item w3-button w3-text-white">Academics</a>
-  		<a href="#" class="w3-bar-item w3-button w3-text-white">Financial</a>
-                    <a href="#" class="w3-bar-item w3-button w3-text-white">Verify Critical Data</a>
+          
+                    <button class="w3-button w3-block w3-left-align w3-text-white" onclick="myAccFunc()">
+<i class="iconify" data-icon="simple-line-icons:user"></i>   Personal Info
+  </button>
+  <div id="accPersonal" class="w3-hide w3-card w3-text-white" style="background-color: #3374a8">
+    <a href="#" class="w3-bar-item w3-button">Demographic Information</a>
+    <a href="#" class="w3-bar-item w3-button">Names</a>
+      <a href="#" class="w3-bar-item w3-button">Contact Detail</a>
+      <a href="#" class="w3-bar-item w3-button">Addresses</a>
+      <a href="#" class="w3-bar-item w3-button">Emergency Contacts</a>
+      <a href="#" class="w3-bar-item w3-button">Payment Address</a>
+  </div>
+                    
+                    <button class="w3-button w3-block w3-left-align w3-text-white" onclick="myAccFunc2()">
+<i class="iconify" data-icon="simple-line-icons:notebook"></i>   Academics
+  </button>
+  <div id="accAcademic" class="w3-hide w3-card w3-text-white" style="background-color: #3374a8">
+    <a href="#" class="w3-bar-item w3-button">Academic Records</a>
+    <a href="#" class="w3-bar-item w3-button">Registration & Declarations</a>
+      <a href="#" class="w3-bar-item w3-button">Degree Progress / AFG</a>
+      <a href="#" class="w3-bar-item w3-button">Global Education</a>
+      <a href="#" class="w3-bar-item w3-button">Examinations</a>
+      <a href="#" class="w3-bar-item w3-button">Commencement Registration</a>
+  </div>
+                    
+                    <button class="w3-button w3-block w3-left-align w3-text-white" onclick="myAccFunc3()">
+<i class="iconify" data-icon="jam:coin"></i>   Financial
+  </button>
+  <div id="accFinance" class="w3-hide w3-card w3-text-white" style="background-color: #3374a8">
+    <a href="#" class="w3-bar-item w3-button">Student Bill</a>
+      <a href="#" class="w3-bar-item w3-button">Account Enquiry</a>
+    <a href="#" class="w3-bar-item w3-button">Financial Aid</a>
+      <a href="#" class="w3-bar-item w3-button">Manage Bank Account</a>
+      <a href="#" class="w3-bar-item w3-button">Make Payment</a>
+  </div>
+                    
+                    <a href="#" class="w3-bar-item w3-button w3-text-white"><i class="iconify" data-icon="mdi:database-lock"></i>   Verify Critical Data</a>
+
 </div>
             </div>
             <div class="col-md-8">
@@ -137,6 +172,39 @@
 	    <script src="assets/js/Sidebar-Menu.js"></script>
 	    <script src="js/buttonControl.js"></script>
 	    <script src="js/chatBotControl.js"></script>
+        <script>
+    function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+        
+        function myAccFunc() {
+  var x = document.getElementById("accPersonal");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+        function myAccFunc2() {
+  var x = document.getElementById("accAcademic");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+        
+        function myAccFunc3() {
+  var x = document.getElementById("accFinance");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+        
+</script>
 	</body>
 
 	</html>
