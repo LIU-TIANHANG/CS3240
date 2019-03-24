@@ -1,4 +1,8 @@
-
+.container-fluid {
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 .header {
     color: white;
@@ -39,4 +43,9 @@
     float:right;
     margin-right: 20px;
     margin-top: 15px;
+}
+#timetable{
+    margin-left:48px;
+    position: absolute;
+    bottom: 0;
 }

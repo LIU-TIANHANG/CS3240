@@ -19,19 +19,37 @@ var handleKeyPress = (e)=>{
 
             }
         }
-        $('#chat-content').append(`<span class="you">`+
-                                      $('#chatbotTextBox').val() 
-                                      + `<span class="time">`
-                                      + time() +
-                                      `</span>
+        let userInput = $('#chatbotTextBox').val();
+        userInput = userInput.replace(/^\s+|\s+$/g, "");
+        console.log(userInput);
+        if(userInput.toLocaleLowerCase() == "unofficaltranscipt"){
+            $('#chat-content').append(`<span class="you">`+
+                $('#chatbotTextBox').val()
+                + `<span class="time">`
+                + time() +
+                `</span></span>`
+                +`<span class="friend last">
+                      <a href="/assets/img/unofficalTranscipt.jpg" download>Link</a>
+                      <span class="time">
+                        `+ time() +
+                 `</span> </span>`);
+
+        }else {
+
+            $('#chat-content').append(`<span class="you">` +
+                $('#chatbotTextBox').val()
+                + `<span class="time">`
+                + time() +
+                `</span>
                                     </span>`);
-        $('#chat-content').append(`<span class="friend last">
+            $('#chat-content').append(`<span class="friend last">
                                       Sry, I am learning more instructions
                                       <span class="time">
-                                        `+ time() +
-                                      `</span>
+                                        ` + time() +
+                `</span>
                                     </span>`);
-        $('#chatbotTextBox').val('');
+        }
+         $('#chatbotTextBox').val('');
         var elem = document.getElementById('chat');
             elem.scrollTop = elem.scrollHeight;
 }
