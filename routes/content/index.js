@@ -30,6 +30,7 @@ router.get('/graduation',(req,res)=>{
     res.render('content/graduation');
 });
 router.get('/examSchedule',(req,res)=>{
+    req.app.locals.layout = 'timetableLayout';
     res.render('content/examSchedule');
 });
 

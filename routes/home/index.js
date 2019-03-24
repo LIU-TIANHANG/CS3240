@@ -73,13 +73,22 @@ router.post('/login',(req,res,next)=>{
         }
     });
     passport.authenticate('local', {failureFlash:true}, function(err, user, info) {
-        if (err) { throw err };
+        if (err) { throw err }
         if (!user) {
             return res.render('home/login', {error_message: info.message})
         }
+        console.log(user);
         req.logIn(user, function(err) {
             if (err) { return next(err); }
-            return res.redirect('/index/' + user._id);
+            if(user.type == 'year1'){
+                return res.redirect('/content/newStudent');
+            }else if(user.type == 'year2'){
+                return res.redirect('/content/su');
+            }else if(user.type == 'year3'){
+                return res.redirect('/content/examSchedule');
+            } else if(user.type == 'year4'){
+                return res.redirect('/content/graduation');
+            }
         });
     })(req, res, next);
 
@@ -126,12 +135,13 @@ router.post('/register',(req,res)=>{
     }else{
         User.findOne({email : req.body.email}).then(user=>{
            if(!user){
+
                const newUser = new User({
                    firstName:req.body.firstName,
                    lastName:req.body.lastName,
                    email:req.body.email,
                    password:req.body.password,
-                   type:req.body.password
+                   type:req.body.type
                });
                bcrypt.genSalt(10,(err,salt)=>{
                    bcrypt.hash(newUser.password,salt,(err,hash)=>{

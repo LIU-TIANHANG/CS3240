@@ -71,11 +71,11 @@ app.use((req,res,next)=>{
 });
 
 //load routes
-// const home = require('./routes/home/index');
+const home = require('./routes/home/index');
 const content = require('./routes/content/index');
 //use routes
-// app.use('/',home);
-app.use('/',content);
+app.use('/',home);
+app.use('/content',content);
 
 app.use(function(req, res, next) {
   res.status(404).render('error-handle/404');
