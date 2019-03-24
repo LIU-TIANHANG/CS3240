@@ -89,6 +89,7 @@ router.post('/login',(req,res,next)=>{
             } else if(user.type == 'year4'){
                 return res.redirect('/content/graduation');
             }
+            return res.redirect('/content/newStudent');
         });
     })(req, res, next);
 
