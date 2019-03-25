@@ -34,6 +34,10 @@ router.get('/examSchedule',(req,res)=>{
     res.render('content/examSchedule');
 });
 
+router.get('/viewExamResult',(req,res)=>{
+    res.render('content/viewExamResult');
+});
+
 
 
 
