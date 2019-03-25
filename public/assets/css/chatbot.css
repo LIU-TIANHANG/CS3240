@@ -3,16 +3,17 @@
 
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
-  background-color: #555;
-  color: white;
+  background-color: #fff;
+  color: black;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.9;
   position: fixed;
   bottom: 0px;
   right: 28px;
   width: 280px;
+    height:50px;
 }
 
 #chatbotImage{
@@ -25,7 +26,7 @@
   position: fixed;
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  border: 0.5px solid black;
   z-index: 9;
 }
 
@@ -205,7 +206,7 @@ div.chat div.chat-content span.friend
   padding: 10px;
   padding-bottom: 25px;
   box-shadow: 2px 2px 20px -2px rgba(60,51,176,0.2);
-  color: rgba(60,51,176,1);
+  color: #3db9fb;
 }
 
 div.chat div.chat-content span.friend.first
@@ -227,7 +228,7 @@ div.chat div.chat-content span.friend span.time
   margin-right: 10px;
   font-size: 10px;
   font-weight: 500;
-  color: rgba(60,51,176,0.5);
+  color: #3db9fb;
 }
 
 div.chat div.chat-content span.you
@@ -236,7 +237,7 @@ div.chat div.chat-content span.you
   float: right;
   width: 70%;
   height: auto;
-  background: #5850c0;
+  background: #3db9fb;
   display: inline-block;
   padding: 10px;
   padding-bottom: 25px;
@@ -283,14 +284,15 @@ div.msg-box .ip-msg
   font-size: 14px;
   padding: 15px;
   padding-right: 30%;
-  color: rgba(60,51,176,0.9);
+  color: rgba(60,51,176,0.);
   border: none;
   background: rgba(0,0,0,0.03);
 }
 
 div.msg-box .ip-msg::placeholder
 {
-  color: rgba(60,51,176,0.4);
+  color: black;
+    opacity: 0.4;
 }
 
 div.msg-box span.btn-group
@@ -305,12 +307,51 @@ div.msg-box span.btn-group
 
 div.msg-box span.btn-group i
 {
-  color: rgba(60,51,176,1);
+  color: #3db9fb;
   font-size: 18px;
   padding: 0 7px;
 }
 
+.button-effect {
+  background-color: #3db9fb;
+  color: white;
+  border-top: 2px solid #55d5fd;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(10, 150, 225, 1);
+  -moz-box-shadow:    0px 3px 0px 0px rgba(10, 150, 225, 1);
+  box-shadow:         0px 3px 0px 0px rgba(10, 150, 225, 1);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor:pointer;
+}
 
+.button-effect:hover {
+  background-color: #F2F2F2;
+  color: #3db9fb;
+  border-top: 0.5px solid grey;
+    border-left: 0.5px solid grey;
+        border-right: 0.5px solid grey;
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(200, 200, 200, 1);
+  -moz-box-shadow:    0px 5px 0px 0px rgba(200, 200, 200, 1);
+  box-shadow:         0px 5px 0px 0px rgba(200, 200, 200, 1);
+ }
+
+.button-effect:active {
+  background-color: #F2F2F2
+  color: #3db9fb;
+  border-top: 2px solid rgba(200, 200, 200, 1);
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow:    0px 3px 0px 0px rgba(255, 255, 255, 1);
+  box-shadow:         0px 3px 0px 0px rgba(255, 255, 255, 1);
+ }
+
+.send-button {
+    border:none;
+}
 
 
 
