@@ -26,6 +26,10 @@ router.get('/su',(req,res)=>{
     res.render('content/su');
 });
 
+router.get('/applyGraduation',(req,res)=>{
+    res.render('content/applyForGraduation');
+});
+
 router.get('/graduation',(req,res)=>{
     res.render('content/graduation');
 });
