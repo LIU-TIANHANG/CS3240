@@ -22,14 +22,14 @@ var handleKeyPress = (e)=>{
         let userInput = $('#chatbotTextBox').val();
         userInput = userInput.replace(/^\s+|\s+$/g, "");
         console.log(userInput);
-        if(userInput.toLocaleLowerCase() == "unofficialtranscipt"){
+        if(userInput.toLocaleLowerCase() == "UnofficialTranscript" || userInput.toLocaleLowerCase() == "ut"){
             $('#chat-content').append(`<span class="you">`+
                 $('#chatbotTextBox').val()
                 + `<span class="time">`
                 + time() +
                 `</span></span>`
                 +`<span class="friend last">
-                      <a href="/assets/img/unofficalTranscipt.jpg" download>Link</a>
+                      <a href="/assets/img/unofficalTranscipt.jpg" download>UnofficialTranscript :)</a>
                       <span class="time">
                         `+ time() +
                  `</span> </span>`);

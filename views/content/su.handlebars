@@ -3,11 +3,89 @@
         S/U Declaration
     </div>
     <div class="row bodyContent" >
-        <button class="btn btn-info center">View details</button>
-        <ul>
-            <li>S/U period is from <b>3 JUN 2019</b> to <b>6 JUN 2019</b></li>
-            <li>The s/u point left: <b>20MCs</b></li>
-            <li>In general, students may exercise the S/U option for up to 32 MCs in the first two regular semesters; if this is not fully utilised, the S/U option may still be exercised in subsequent semesters, for up to 12 MCs.</li>
-        </ul>
+        <div class="col-12 firstPage">
+                <ul>
+                    <li>S/U period is from <b>3 JUN 2019</b> to <b>6 JUN 2019</b></li>
+                    <li>The s/u point left: <b>20MCs</b></li>
+                    <li>In general, students may exercise the S/U option for up to 32 MCs in the first two regular semesters; if this is not fully utilised, the S/U option may still be exercised in subsequent semesters, for up to 12 MCs.</li>
+                </ul>
+            <div class="col-12 text-center">
+                <button class="btn btn-info center" onclick="hideFirst();">View details</button>
+            </div>
+        </div>
+        <div class="col-12 content">
+        <table class="table table-hover suTable">
+            <thead>
+            <tr width="99%">
+                <th scope="col" >#</th>
+                <th scope="col">Course</th>
+                <th scope="col">Grade received</th>
+                <th scope="col">checkbox</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>CS1010</td>
+                <td>A-</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>CG1111</td>
+                <td>B</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>CS1231</td>
+                <td>B-</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>MA1511</td>
+                <td>B+</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>MA1512</td>
+                <td>A+</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>GER1000</td>
+                <td>C</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            </tbody>
+
+        </table>
+            <div class="col-12 text-center">
+                <button class="btn btn-info center" onclick="hideSecond();">Submit</button>
+            </div>
+        </div>
+        <div class="text-center confirmationPage">
+            <h1>Congratulation</h1>
+            <p>You have successfully complete you s/u exercises.</p>
+            <p>The confirmation mail will be sent to your NUS mail account.</p>
+            <p>You can still change your s/u declaration before <b>3/6/2019</b></p>
+        </div>
     </div>
 </div>
+<script>
+    $('.content').hide();
+    $('.confirmationPage').hide();
+    function hideFirst(){
+        $('.firstPage').hide();
+        $('.content').show();
+    }
+    function hideSecond(){
+        $('.content').hide();
+        $('.confirmationPage').show();
+        $('.bodyHeader').hide();
+    }
+
+</script>
