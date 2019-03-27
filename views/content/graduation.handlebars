@@ -1,10 +1,79 @@
-<div class="dropdown show">
-    <a class="btn btn-secondary dropdown-toggle btn-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:20%; width:50%;background-color:orange;">
-        graduation
-    </a>
-
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#"><div class="row">Please refer to the instructions sent by the Yale-NUS Registry) <br />
-            The Satisfactory/Unsatisfactory (S/U) Option Declaration exercise for Semester 1,  <br />AY2018/19 will be held upon results release from 26 December 2018 to 28 December 2018,<br /> 6pm. Please check your email dated 11 Dec 2018 for further information.</div></a>
+<div class="infoBlock">
+    <div class="row bodyHeader" >
+        Apply for Graduation
     </div>
+    <div class="row bodyContent" >
+        <div class="col-12 firstPage">
+            <ul>
+                    <li>Click "Next" to apply for graduation.</li>
+                    <li>If you have questions, please contact your program/subject advisor at the Faculty/School.</li>
+                    <li>You have met the <b>minimum 160.00 MCs</b> required to graduate and can apply for graduation.</li>
+                </ul>
+            <div class="col-12 text-center">
+                <button class="btn btn-info center" onclick="hideFirst();">Next</button>
+            </div>
+        </div>
+        <div class="col-12 secondPage">
+                Your graduation details are as follows:
+                <ul>
+        <li><b>Degree:</b> Bachelor of Computer Science (CS)</li>
+        <li><b>Honors:</b> Computer Science(Hons)-CS</li>
+        <li><b>Expected graduation term:</b> 2019/2020 Semester</li>
+        <li><b>Grduation Status:</b> Not Applied</li>
+                </ul>
+            <div class="col-12 text-center">
+                <button class="btn btn-info center" onclick="hideSecond();">Apply Now</button>
+            </div>
+        </div>
+        <div class="text-center confirmationPage">
+            <h1>Congratulation</h1>
+            <p>You have successfully applied for Graduation.</p>
+            <p>The confirmation mail will be sent to your NUS mail account.</p>
+            <p>You can still withdraw your application before <b>3/6/2019</b></p>
+        </div>
+        </div>
 </div>
+<!--
+<div class="infoBlock">
+    <div class="row bodyHeader" >
+        View Graduation Status
+    </div>
+    <div class="row bodyContent" >
+        <div class="col-12 firstPage">
+            <ul>
+                    <li>Track your study progress and the graduation requirements that need to be fulfilled.</li>
+                    <li>You have fufilled <b>160mc</b> out of 160mc required to graduate.</li>
+                </ul>
+            <div class="col-12 text-center">
+                <button class="btn btn-info center" onclick="hideFirst();">Apply</button>
+            </div>
+        </div>
+        <div class="col-12 content">
+         <table class="table table-striped">
+             Graduation Status
+                    <tr><th>Requirements</th><th>Unit Required</th><th>Unit Satisfied</th><th>Unit Remaining</th></tr>
+                    <tr><td><b>Overall Requirement</b></td><td>160</td><td>160</td><td>0</td></tr>
+                    <tr><td>University Level Requirement</td><td>20</td><td>20</td><td>0</td></tr>
+                    <tr><td>CS Honor Requirement</td><td>100</td><td>100</td><td>0</td></tr>
+                    <tr><td>Focus Area Requirement</td><td>12</td><td>12</td><td>0</td></tr>
+                    <tr><td>Mathematics and Science Requirement</td><td>8</td><td>8</td><td>0</td></tr>
+                    <tr><td>UEM Requirement</td><td>20</td><td>20</td><td>0</td></tr>
+                </table>
+        </div>
+    </div>
+</div> -->
+<script>
+    $('.confirmationPage').hide();
+    $('.secondPage').hide();
+    $('.content').hide();
+
+    function hideFirst(){
+        $('.firstPage').hide();
+        $('.secondPage').show();
+    }
+    function hideSecond(){
+        $('.secondPage').hide();
+        $('.confirmationPage').show();
+    }
+
+</script>
