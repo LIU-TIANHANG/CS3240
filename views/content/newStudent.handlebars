@@ -1,41 +1,37 @@
-<div class="dropdown show">
-    <a class="btn btn-secondary dropdown-toggle btn-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:20%; margin-top:10px; width:60%;background-color:orange;">
-        S/U Declaration
-    </a>
-
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="width:60%;">
-        <div style="text-align:center;">
-        Instructions:
- <br/> <br/>
-Before you proceed, please ensure that you have familiarised yourself with the S/U policies and regulations relevant to your cohort. You can click here to access the S/U Homepage for Frequently Asked Questions.
-<br/> <br/>
-If you have academic or module related S/U queries, please contact your Home Faculty. Please click here for the S/U mailbox directory of the respective Faculties/Schools.
-<br/> <br/>
-If you are applying for or currently on scholarship, please remember to save/ print a copy of your results with your CAP before you proceed with your S/U declarations.
-<br/> <br/>
-No S/U declarations can be made after the S/U Declaration Exercise deadline.
-<br/> <br/>
-To proceed, click on any of the links below.
-<br/> <br/>
+<div class="infoBlock">
+    <div class="row bodyHeader" >
+        Registration Part 1
+    </div>
+    <div class="row content">
+        <div class="col-12" style="padding-left:0;">
+        <iframe height="600" width="900" style="  position: fixed;" src="https://myregistration.nus.edu.sg/"></iframe>
+        </div>
+        </div>
+    <div class="row bodyContent" >
+        <div class="col-12 firstPage">
+Registration (Part One) 
+                <ul>
+                    <li><b>Academic Program</b> : BComp</li>
+                    <li><b>Admit Term</b>  : 2019/2020 Semester 1</li>
+                    <li><b>Registration (Part One)</b></li>
+                    <li>Start date: 28-JUN-2019</li>
+                    <li>End date: 31-AUG-2019</li>
+                </ul>
+            <div class="col-12 text-center">
+                <button class="btn btn-info center" onclick="hideFirst();">Begin Registration</button>
+            </div>
+        </div>
+        
+    </div>
     
-    <button><a href="#">View Past S/U Declarations</a></button><br/> <br/>
-        <button><a href="#">Submit S/U for current term</a> </button>
 </div>
-    </div>
-</div>
+<script>
+    $('.content').hide();
+    function hideFirst(){
+        $('.firstPage').hide();
+        $('.bodyContent').hide();
+        $('.bodyHeader').hide();
+        $('.content').show();
+    }
 
-<div class="dropdown show">
-    <a class="btn btn-secondary dropdown-toggle btn-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:20%; margin-top:10px; width:60%;background-color:orange;">
-        View Exam Result
-    </a>
-
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="width:60%;">
-        <table>
-         <tr><td><a href="/content/viewExamResult">2018/2019 Semester 2 <br/> National University of Singapore <br/> Undergraduate </a></td></tr>
-                     <tr><td><a href="#">2018/2019 Semester 1 <br/> National University of Singapore <br/> Undergraduate</a></td></tr>
-                     <tr><td><a href="#">2017/2018 Semester 2 <br/> National University of Singapore <br/> Undergraduate</a></td></tr>
-                     <tr><td><a href="#">2017/2018 Semester 1 <br/> National University of Singapore <br/> Undergraduate</a></td></tr>
-
-        </table>
-    </div>
-</div>
+</script>
