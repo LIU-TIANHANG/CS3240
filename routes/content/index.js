@@ -42,6 +42,14 @@ router.get('/viewExamResult',(req,res)=>{
     res.render('content/viewExamResult');
 });
 
+router.get('/moduleMapping',(req,res)=>{
+   res.render('content/moduleMapping');
+});
+
+router.get('/studentBill',(req,res)=>{
+    res.render('content/schoolfee');
+})
+
 
 
 
