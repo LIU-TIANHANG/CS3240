@@ -29,12 +29,25 @@ var handleKeyPress = (e)=>{
                 + time() +
                 `</span></span>`
                 +`<span class="friend last">
-                      <a href="/assets/img/unofficalTranscipt.jpg" download>UnofficialTranscript :)</a>
+                      <a href="/assets/img/unofficalTranscipt.jpg" download>Here is your Unofficial Transcript :)</a>
                       <span class="time">
                         `+ time() +
                  `</span> </span>`);
 
-        }else {
+        }
+    else if(userInput.toLocaleLowerCase().includes("student bill") || userInput.toLocaleLowerCase().includes("bill") || userInput.toLocaleLowerCase().includes("billing")){
+            $('#chat-content').append(`<span class="you">`+
+                $('#chatbotTextBox').val()
+                + `<span class="time">`
+                + time() +
+                `</span></span>`
+                +`<span class="friend last">
+                      <a href="/assets/img/studentbill.png" download>Here is your Student Bill :)</a>
+                      <span class="time">
+                        `+ time() +
+                 `</span> </span>`);
+            }
+    else {
 
             $('#chat-content').append(`<span class="you">` +
                 $('#chatbotTextBox').val()

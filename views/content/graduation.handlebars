@@ -4,7 +4,7 @@
     </div>
     <div class="row bodyContent" >
         <div class="col-12 firstPage">
-            <ul>
+            <ul style="list-style: none;">
                     <li>Click "Next" to apply for graduation.</li>
                     <li>If you have questions, please contact your program/subject advisor at the Faculty/School.</li>
                     <li>You have met the <b>minimum 160.00 MCs</b> required to graduate and can apply for graduation.</li>
@@ -15,7 +15,7 @@
         </div>
         <div class="col-12 secondPage">
                 Your graduation details are as follows:
-                <ul>
+                <ul style="list-style: none;">
         <li><b>Degree:</b> Bachelor of Computer Science (CS)</li>
         <li><b>Honors:</b> Computer Science(Hons)-CS</li>
         <li><b>Expected graduation term:</b> 2019/2020 Semester</li>
@@ -33,24 +33,18 @@
         </div>
         </div>
 </div>
-<!--
-<div class="infoBlock">
+<div class="infoBlock gradinfo">
     <div class="row bodyHeader" >
         View Graduation Status
     </div>
-    <div class="row bodyContent" >
-        <div class="col-12 firstPage">
-            <ul>
-                    <li>Track your study progress and the graduation requirements that need to be fulfilled.</li>
+    <div class="row bodyContent" style="height:690px" >
+        <div class="col-12">
+            <ul style="list-style: none;">
                     <li>You have fufilled <b>160mc</b> out of 160mc required to graduate.</li>
                 </ul>
-            <div class="col-12 text-center">
-                <button class="btn btn-info center" onclick="hideFirst();">Apply</button>
-            </div>
         </div>
-        <div class="col-12 content">
+        <div class="col-12">
          <table class="table table-striped">
-             Graduation Status
                     <tr><th>Requirements</th><th>Unit Required</th><th>Unit Satisfied</th><th>Unit Remaining</th></tr>
                     <tr><td><b>Overall Requirement</b></td><td>160</td><td>160</td><td>0</td></tr>
                     <tr><td>University Level Requirement</td><td>20</td><td>20</td><td>0</td></tr>
@@ -61,7 +55,7 @@
                 </table>
         </div>
     </div>
-</div> -->
+</div>
 <script>
     $('.confirmationPage').hide();
     $('.secondPage').hide();
@@ -69,6 +63,7 @@
 
     function hideFirst(){
         $('.firstPage').hide();
+                $('.gradinfo').hide();
         $('.secondPage').show();
     }
     function hideSecond(){
