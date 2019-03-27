@@ -20,38 +20,42 @@
     </div> -->
         <div class="row bodyContent" >
            <div class="col-12 firstPage">
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container" style="margin-bottom: 20px;padding: 7px 0;font-size: 24px;">
+            <div class="icon-container" style="padding: 7px 0;font-size: 24px;">
               <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-paypal" style="color:blue;"></i>
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
+              <i class="fa fa-credit-card-alt" style="color:orange;"></i>
             </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-              </div>
-            </div>
-                
+               <table>
+                   <tr>
+            <td><label for="cname">Name on Card</label></td>
+            <td><input type="text" id="cname" name="cardname" placeholder=""></td>
+                       </tr>
+                        <tr>
+            <td><label for="ccnum">Credit card number</label></td>
+            <td><input type="text" id="ccnum" name="cardnumber" placeholder=""></td>
+                   </tr>
+                   <tr>
+            <td><label for="expmonth">Exp Month</label></td>
+            <td><input type="text" id="expmonth" name="expmonth" placeholder=""></td>
+                   </tr>
+                   
+              <tr>
+                <td><label for="expyear">Exp Year</label></td>
+                <td><input type="text" id="expyear" name="expyear" placeholder=""></td>
+                   </tr>
+              <tr>
+                <td><label for="cvv">CVV</label></td>
+                <td><input type="text" id="cvv" name="cvv" placeholder=""></td>
+                   </tr>
+                </table>
         <input type="submit" value="Make payment" class="btn" style="background-color: #3db9fb;color: white;padding: 12px;margin: 10px 0;border: none;width: 100%;border-radius: 3px;cursor: pointer;font-size: 17px;">
                     </div>
     </div>
 <style>
 
 input[type=text] {
-  width: 50%;
+  width: 250px;
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
