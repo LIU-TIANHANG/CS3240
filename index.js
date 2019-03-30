@@ -63,4 +63,8 @@ router.get('/manageBankAccount',(req,res)=>{
     res.render('content/manageBankAccount');
 })
 
+router.get('/billingAddress',(req,res)=>{
+    res.render('content/billingAddress');
+})
+
 module.exports = router;

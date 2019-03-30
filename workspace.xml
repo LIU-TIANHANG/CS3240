@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/views/content/verifyCriticalData.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/content/verifyCriticalData.handlebars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/content/personalInfo.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/content/personalInfo.handlebars" afterDir="false" />	  
       <change beforePath="$PROJECT_DIR$/views/content/manageBankAccount.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/content/manageBankAccount.handlebars" afterDir="false" />	  
+      <change beforePath="$PROJECT_DIR$/views/content/billingAddress.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/content/billingAddress.handlebars" afterDir="false" />	  
 	  </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -85,6 +86,15 @@
           <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="150" column="70" selection-start-line="150" selection-start-column="70" selection-end-line="150" selection-end-column="70" />
+        </state>
+          </provider>
+        </entry>
+	  </file>
+	  <file pinned="false" current-in-tab="false">
+	  	<entry file="file://$PROJECT_DIR$/views/content/billingAddress.handlebars">
+          <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="140" column="60" selection-start-line="140" selection-start-column="60" selection-end-line="140" selection-end-column="60" />
         </state>
           </provider>
         </entry>
@@ -617,6 +627,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="150" column="70" selection-start-line="150" selection-start-column="70" selection-end-line="150" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+	<entry file="file://$PROJECT_DIR$/views/content/billingAddress.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="140" column="60" selection-start-line="140" selection-start-column="60" selection-end-line="140" selection-end-column="60" />
         </state>
       </provider>
     </entry>
