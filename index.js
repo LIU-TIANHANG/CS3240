@@ -59,4 +59,8 @@ router.get('/personalInfo',(req,res)=>{
     res.render('content/personalInfo');
 })
 
+router.get('/manageBankAccount',(req,res)=>{
+    res.render('content/manageBankAccount');
+})
+
 module.exports = router;
