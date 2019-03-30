@@ -67,4 +67,8 @@ router.get('/billingAddress',(req,res)=>{
     res.render('content/billingAddress');
 })
 
+router.get('/financialAid',(req,res)=>{
+    res.render('content/financialAid');
+})
+
 module.exports = router;
