@@ -1,0 +1,171 @@
+<div class="infoBlock">
+    <div class="row" id="intro">
+        <div class="col-12">
+            <h2><span class="badge badge-secondary" style="margin-left: -15px">Quick Links:</span></h2>
+        </div>
+    </div>
+    <div class="suWrapper">
+    <div class="row bodyHeader" style="width:1122.5px;">
+        <div class="col-12">
+            S/U Declaration
+        </div>
+    </div>
+    <div class="row bodyContent" style="width:1122.5px; height:260px">
+        <div class="col-12 firstPage">
+                <ul>
+                    <li>S/U period is from <b>3 JUN 2019</b> to <b>6 JUN 2019</b></li>
+                    <li>The s/u point left: <b>20MCs</b></li>
+                    <li>In general, students may exercise the S/U option for up to 32 MCs in the first two regular semesters; if this is not fully utilised, the S/U option may still be exercised in subsequent semesters, for up to 12 MCs.</li>
+                </ul>
+            <div class="col-12 text-center">
+                <button class="btn btn-info center" onclick="hideFirst()" style="margin-top:26px">View Details</button>
+            </div>
+        </div>
+        <div class="col-12 content">
+        <table class="table table-hover suTable" style="margin-left: 0px; width:1122.5px; height:100%">
+            <thead>
+            <tr width="99%">
+                <th scope="col" >#</th>
+                <th scope="col">Course</th>
+                <th scope="col">Grade received</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>CS1010</td>
+                <td>A-</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>CG1111</td>
+                <td>B</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>CS1231</td>
+                <td>B-</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>MA1511</td>
+                <td>B+</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>MA1512</td>
+                <td>A+</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>GER1000</td>
+                <td>C</td>
+                <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1"></td>
+            </tr>
+            </tbody>
+
+        </table>
+            <div class="col-12 text-center" style="margin-left: 0.55px; width:1122.5px;">
+                <button class="btn btn-info center" onclick="hideSecond();">Submit</button>
+            </div>
+        </div>
+        <div class="text-center confirmationPage">
+            <h1>Congratulations</h1>
+            <p>You have successfully completed your S/U exercise.</p>
+            <p>The confirmation email will be sent to your NUS email account.</p>
+            <p>You can still change your S/U declaration before <b>3/6/2019</b>.</p>
+            <button class="btn btn-info center" onclick="homePage();" style="margin-left:0.5px;">Home Page</button>
+        </div>
+    </div>
+    </div>
+    <div class="resultWrapper">
+        <div class="row resultHeader text-center" style="width:1122.5px;">
+            <div class="col-12">View Exam Results</div>
+        </div>
+        <div class="row resultLandingPage" style="width:1122.5px; height:118px">
+            <div class="col-12 firstPage">
+                <ul>
+                    <li>Click to view current semester results</li>
+                </ul>
+                <div class="col-12 text-center">
+                    <button class="btn btn-info center" onclick="showResult();">View Result</button>
+                </div>
+            </div>
+        </div>
+        <div id="resultShowPage">
+            <div class="row">
+                <div class="col-12 text-center" style="width:1122.5px; margin-left:105px;"><h1>Summary</h1></div>
+            </div>
+            <div>
+                <table class="table table-striped" style="width:1100px; margin-left:-10px;">
+                    <tr><th>Module</th><th>Description</th><th>Credit Unit</th><th>Grade</th></tr>
+                    <tr><td>CS1231</td><td>Discrete Structures</td><td>4</td><td>A+</td></tr>
+                    <tr><td>CS1101S</td><td>Programming Methodology</td><td>4</td><td>A</td></tr>
+                    <tr><td>MA1101R</td><td>Linear Algebra I</td><td>4</td><td>B+</td></tr>
+                    <tr><td>GER1000</td><td>Quantitative Reasoning</td><td>4</td><td>B</td></tr>
+                    <tr><td>CG1111</td><td>Engineering Principles and Practice I</td><td>6</td><td>B-</td></tr>
+                </table>
+                <br/>
+                Program - Bachelor of Computing
+                <br/>
+                <table class="table table-striped" style="width:1100px; margin-left:-10px">
+                    <tr><th></th><th>From Enrollment</th><th>From Transfer Credit</th><th>Combined Term Total</th><th>Cumulative Total</th></tr>
+                    <tr><td>Graded MCs towards CAP</td><td>12</td><td></td><td>12</td><td>40</td></tr>
+                    <tr><td>Graded MCs not for CAP</td><td>0</td><td></td><td>0</td><td>4</td></tr>
+                    <tr><td>CAP</td><td></td><td></td><td></td><td>4.51</td></tr>
+                    <tr><td>SCAP(this semester)</td><td></td><td></td><td></td><td>4.4</td></tr>
+                    <tr><td>Academic Status</td><td></td><td></td><td></td><td>Passed/Proceed</td></tr>
+                </table>
+                <br>
+                <div class="row">
+                    <div class="col-12 text-center" style="height=200%">
+                        <button class="btn btn-info text-center" onclick="homePage();" style="margin-left:211px; margin-top:0px">Home Page</button>
+                    </div>
+                </div>
+                </br>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.content').hide();
+    $('.confirmationPage').hide();
+    $('#resultShowPage').hide();
+    function hideFirst(){
+        $('.firstPage').hide();
+        $('.content').show();
+        $('.resultWrapper').hide();
+        $('#intro').hide();
+    }
+    function homePage(){
+        $('.suWrapper').show();
+        $('.confirmationPage').hide();
+        $('.bodyHeader').show();
+        $('.firstPage').show();
+        $('.resultWrapper').show();
+        $('.resultHeader').show();
+        $('.resultLandingPage').show();
+        $('#resultShowPage').hide();
+        $('#intro').show();
+    }
+    function hideSecond(){
+        $('.content').hide();
+        $('.confirmationPage').show();
+        $('.bodyHeader').hide();
+    }
+    function showResult(){
+        $('.suWrapper').hide();
+        $('.resultWrapper').show();
+        $('.resultHeader').hide();
+        $('.resultLandingPage').hide();
+        $('#resultShowPage').show();
+        $('#intro').hide();
+    }
+</script>

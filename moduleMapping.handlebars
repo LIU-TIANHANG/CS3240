@@ -1,0 +1,171 @@
+<form>
+  <div class="row">
+    <div class="col" style="margin-left:0px">
+      <label >Partner University: </label>
+		<select id="partnerUniversity" class="form-control form-control-sm">
+		</select>
+    </div>
+    <div class="col" style="margin-left:150px">
+      <label >Faculty: </label>
+		<select id="faculty" class="form-control form-control-sm">
+		</select>
+    </div>
+  </div>
+</form>
+
+
+<table class="table table-striped" id="exchangeTable" style="width:1095px">
+  <thead>
+    <tr>
+        <th colspan="5" scope='colgroup' class='text-center'>Partner University</th>
+        <th colspan="4" scope='colgroup' class='text-center'>NUS</th>
+      </tr>
+    <tr>
+      <th scope="col">Faculty</th>
+      <th scope="col">Partner University</th>
+      <th scope="col">Module code</th>
+      <th scope="col">Module name</th>
+      <th scope="col">Module credit</th>
+        <th scope="col">Module code</th>
+        <th scope="col">Module name</th>
+        <th scope="col">Module credit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Faculty of Arts and Social Sciences</td>
+      <td>Budapest University of Technology and Economics</td>
+      <td>BMEPIPT711</td>
+      <td>Departmental Project 3</td>
+      <td>8.00</td>
+      <td>AR4101</td>
+      <td>Design 7</td>
+      <td>8.00</td>
+    </tr>
+    <tr>
+      <td>NUS Business School</td>
+      <td>Hong Kong University of Science and Technology</td>
+      <td>ACCT2010</td>
+      <td>PRINCIPLES OF ACCOUNTING 1</td>
+      <td>3.00</td>
+      <td>ACC1002</td>
+      <td>Financial Accounting</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>NUS Business School</td>
+      <td>Hong Kong University of Science and Technology</td>
+      <td>FINA3304</td>
+      <td>FINANCIAL MARKETS</td>
+      <td>4.00</td>
+      <td>FIN3103</td>
+      <td>Financial Markets</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>Faculty of Science</td>
+      <td>Hong Kong University of Science and Technology</td>
+      <td>LIFS1020</td>
+      <td>Biology of Human Health</td>
+      <td>3.00</td>
+      <td>LSM1991</td>
+      <td>Exchange Enrichment Module</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>Faculty of Arts and Social Sci</td>
+      <td>The Chinese University of Hong Kong</td>
+      <td>FREN1000</td>
+      <td>French I</td>
+      <td>1.00</td>
+      <td>LAF1201</td>
+      <td>French 1</td>
+      <td>4.00</td>
+    </tr>  
+    <tr>
+      <td>School of Computing</td>
+      <td>The Chinese University of Hong Kong</td>
+      <td>CSCI1130</td>
+      <td>Introduction to Computing Using Java</td>
+      <td>3.00</td>
+      <td>CS1010J</td>
+      <td>Programming Methodology</td>
+      <td>4.00</td>
+    </tr> 
+    <tr>
+      <td>Faculty of Engineering</td>
+      <td>The Chinese University of Hong Kong</td>
+      <td>DSME4240</td>
+      <td>Supply Chain and Logistics Analytics</td>
+      <td>3.00</td>
+      <td>IE4984</td>
+      <td>Exchange Elective</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>Faculty of Science</td>
+      <td>The Chinese University of Hong Kong</td>
+      <td>MATH1030</td>
+      <td>Linear Algebra I</td>
+      <td>3.00</td>
+      <td>MA1101R</td>
+      <td>Linear Algebra I</td>
+      <td>4.00</td>
+    </tr>               
+  </tbody>
+</table>
+<script type="text/javascript">
+	var exchangeTable = document.getElementById('exchangeTable');
+	var tableLength = exchangeTable.rows.length;
+	let UniversitySet = new Set();
+	for(let i=2;i< tableLength;i++){
+		var cell = exchangeTable.rows.item(i).cells.item(1).innerHTML;
+		UniversitySet.add(cell);
+	}
+	for(let item of UniversitySet){
+		$('#partnerUniversity').append($('<option></option>')
+			.attr('value', item )
+		.text(item));
+	}
+	$( "#partnerUniversity" ).change(fillFaculty);
+	function fillFaculty() {
+		let content = document.getElementById('partnerUniversity').value;
+		let select = $('#faculty');
+		select.empty();
+		const facultyEntry = new Set();
+		for(let i=2;i< tableLength;i++){
+		var cell = exchangeTable.rows.item(i).cells.item(1).innerHTML;
+			if(cell == content){
+				var valInFaculty = exchangeTable.rows.item(i).cells.item(0).innerHTML;
+				facultyEntry.add(valInFaculty);
+			}	   
+		}
+		for(let item of facultyEntry){
+			select.append($('<option></option>')
+				.text(item));
+	
+		}
+		orderTable();
+	}
+
+	fillFaculty();
+	$( "#faculty" ).change(orderTable);
+	function orderTable(){
+		let universityName = document.getElementById('partnerUniversity').value;
+		let facultyName = document.getElementById('faculty').value;
+		for(let i=2;i< tableLength;i++){
+			$(exchangeTable.rows.item(i)).css("display","");
+		}
+
+		for(let i=2;i< tableLength;i++){
+			var cellUniName = exchangeTable.rows.item(i).cells.item(1).innerHTML;
+			var cellFacultyName = exchangeTable.rows.item(i).cells.item(0).innerHTML;
+			console.log(cellFacultyName);
+			if(cellUniName != universityName || cellFacultyName != facultyName){
+				console.log(exchangeTable.rows.item(i));
+				$(exchangeTable.rows.item(i)).css("display","none");
+			}	
+		}
+	}
+
+</script>

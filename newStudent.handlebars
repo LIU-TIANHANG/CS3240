@@ -1,0 +1,36 @@
+<div class="infoBlock">
+    <div class="row bodyHeader" style="width:127.75%; height:100%">
+Registration (Part One) 
+    </div>
+        <div class="row content">
+            <div class="col-12" style="padding-left:0; height:100%">
+        <iframe height="600" width="900" style="position: fixed;" src="https://myregistration.nus.edu.sg/"></iframe>
+        </div>
+        </div>
+    <div class="row bodyContent" style="width:127.75%; height:238px">
+        <div class="col-12 firstPage">
+                <ul style="list-style: none;">
+                    <li><b>Academic Program</b> : BComp</li>
+                    <li><b>Admit Term</b>  : 2019/2020 Semester 1</li>
+                    <li><b>Registration (Part One)</b></li>
+                    <li>Start date: 28-JUN-2019</li>
+                    <li>End date: 31-AUG-2019</li>
+                </ul>
+            <div class="col-12 text-center";>
+                <button class="btn btn-info center" onclick="hideFirst();">Begin Registration</button>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+<script>
+    $('.content').hide();
+    function hideFirst(){
+        $('.firstPage').hide();
+        $('.bodyContent').hide();
+        $('.bodyHeader').hide();
+        $('.content').show();
+    }
+
+</script>
