@@ -85,7 +85,7 @@ router.post('/login',(req,res,next)=>{
             }else if(user.type == 'year2'){
                 return res.redirect('/content/su');
             }else if(user.type == 'year3'){
-                return res.redirect('/content/examSchedule');
+                return res.redirect('/content/yearthree');
             } else if(user.type == 'year4'){
                 return res.redirect('/content/graduation');
             }

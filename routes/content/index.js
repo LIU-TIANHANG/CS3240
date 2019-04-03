@@ -50,6 +50,10 @@ router.get('/studentBill',(req,res)=>{
     res.render('content/schoolfee');
 })
 
+router.get('/yearthree',(req,res)=>{
+    res.render('content/yearthree');
+})
+
 
 
 

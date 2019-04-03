@@ -1,4 +1,9 @@
 <div class="infoBlock">
+    <div class="row" id="intro">
+        <div class="col-12">
+            <h2><span class="badge badge-secondary" style="margin-left: -12px">Quick Links:</span></h2>
+        </div>
+    </div>
     <div class="row bodyHeader" >
         Apply for Graduation
     </div>
@@ -30,6 +35,9 @@
             <p>You have successfully applied for Graduation.</p>
             <p>The confirmation mail will be sent to your NUS mail account.</p>
             <p>You can still withdraw your application before <b>3/6/2019</b></p>
+             <div class="col-12 text-center">
+                <button class="btn btn-info center" onclick="hideLast();">Homepage</button>
+            </div>
         </div>
         </div>
 </div>
@@ -37,7 +45,7 @@
     <div class="row bodyHeader" >
         View Graduation Status
     </div>
-    <div class="row bodyContent" style="height:690px" >
+    <div class="row bodyContent" style="height:620px" >
         <div class="col-12">
             <ul style="list-style: none;">
                     <li>You have fufilled <b>160mc</b> out of 160mc required to graduate.</li>
@@ -63,12 +71,19 @@
 
     function hideFirst(){
         $('.firstPage').hide();
-                $('.gradinfo').hide();
+        $('.gradinfo').hide();
         $('.secondPage').show();
+                $('#intro').hide();
     }
     function hideSecond(){
         $('.secondPage').hide();
         $('.confirmationPage').show();
+    }
+    function hideLast(){
+        $('.confirmationPage').hide();
+        $('.firstPage').show();
+        $('.gradinfo').show();
+                $('#intro').show();
     }
 
 </script>

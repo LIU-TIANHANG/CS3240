@@ -1,10 +1,15 @@
 <div class="infoBlock">
+    <div class="row" id="intro">
+        <div class="col-12">
+            <h2><span class="badge badge-secondary" style="margin-left: -12px">Quick Links:</span></h2>
+        </div>
+    </div>
     <div class="row bodyHeader" >
 Registration (Part One) 
     </div>
     <div class="row content">
         <div class="col-12" style="padding-left:0;">
-        <iframe height="600" width="900" style="  position: fixed;" src="https://myregistration.nus.edu.sg/"></iframe>
+        <iframe height="600" width="810" src="https://myregistration.nus.edu.sg/"></iframe>
         </div>
         </div>
     <div class="row bodyContent" >
@@ -28,6 +33,7 @@ Registration (Part One)
     $('.content').hide();
     function hideFirst(){
         $('.firstPage').hide();
+                $('#intro').hide();
         $('.bodyContent').hide();
         $('.bodyHeader').hide();
         $('.content').show();
