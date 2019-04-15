@@ -45,8 +45,21 @@ var handleKeyPress = (e)=>{
                       <a href="/assets/img/studentbill.png" download>Here is your Student Bill :)</a>
                       <span class="time">
                         `+ time() +
-                 `</span> </span>`);
-            }
+                `</span> </span>`);
+        }
+        else if(userInput.toLocaleLowerCase().includes("help")){
+            $('#chat-content').append(`<span class="you">`+
+                $('#chatbotTextBox').val()
+                + `<span class="time">`
+                + time() +
+                `</span></span>`
+                +`<span class="friend last">
+                      ut-> official transcript
+                      bill-> student bill
+                      <span class="time">
+                        `+ time() +
+                `</span> </span>`);
+        }
     else {
 
             $('#chat-content').append(`<span class="you">` +

@@ -1,10 +1,11 @@
+
 <div class="infoBlock">
     <div class="row" id="intro">
         <div class="col-12">
             <h2><span class="badge badge-secondary" style="margin-left: -12px">Quick Links:</span></h2>
         </div>
     </div>
-    <div class="suWrapper">
+    <div class="suWrapper" id="step1">
     <div class="row bodyHeader" >
             S/U Declaration
     </div>
@@ -134,6 +135,7 @@
         </div>
         </div>
     </div>
+
 </div>
 <script>
     $('.content').hide();
@@ -169,4 +171,29 @@
         $('#resultShowPage').show();
         $('#intro').hide();
     }
+</script>
+<script type="text/javascript">
+    function startIntro(){
+        var intro = introJs();
+        intro.setOption('tooltipPosition', 'auto');
+        intro.setOptions({
+            steps: [
+                {
+                    element: document.querySelector('#step1'),
+                    intro: "We guess you like this",
+                    position: 'top'
+                },
+                {
+                    element: document.querySelectorAll('#step2')[0],
+                    intro: "This is the sidebar",
+                },
+                {
+                    element: document.getElementById('chatBotButton'),
+                    intro: 'Here is the chatbot. He will be your best friend in this website',
+                }
+            ]
+        });
+        intro.start();
+    }
+    startIntro();
 </script>

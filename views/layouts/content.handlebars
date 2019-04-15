@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="/assets/css/chatbot.css">
     <link rel="stylesheet" href="/assets/css/body.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="/intro.js-master/minified/intro.min.js"></script>
+    <link href="/intro.js-master/minified/introjs.min.css" rel="stylesheet">
 </head>
 
 <body style="background-color: #EDF0F5">
@@ -33,7 +36,7 @@
     {{>content/header}}
     </div>
         <div class="row" style="height:78%">
-            <div class="col-2">
+            <div class="col-2" id="step2">
             {{>content/sidebar}}
             </div>
             <div class="col-8">
@@ -43,7 +46,9 @@
 
     <div class="fixed-bottom">
         <div class="row">
+            <div class="col" id="step3">
                 {{>content/chatbot}}
+            </div>
         </div>
 </div>
 
