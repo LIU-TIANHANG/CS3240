@@ -51,6 +51,25 @@ router.get('/yearthree',(req,res)=>{
     res.render('content/yearthree');
 })
 
+router.get('/bankacc',(req,res)=>{
+    res.render('content/manageBankAccount');
+})
+
+router.get('/verifycrit',(req,res)=>{
+    res.render('content/verifyCriticalData');
+})
+
+router.get('/personalinfo',(req,res)=>{
+    res.render('content/personalInfo');
+})
+
+router.get('/fas',(req,res)=>{
+    res.render('content/financialAid');
+})
+
+router.get('/billadd',(req,res)=>{
+    res.render('content/billingAddress');
+})
 
 
 
