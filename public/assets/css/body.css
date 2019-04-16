@@ -11,11 +11,11 @@
     /*background-color: #DCDCDC;*/
     text-align: center;
     background-color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 div.bodyHeader{
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 div.resultHeader{
     margin-top: 15px;
@@ -31,7 +31,7 @@ div.resultHeader{
     /*background-color: #DCDCDC;*/
     text-align: center;
     background-color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 div.resultLandingPage{
     padding-top: 15px;
@@ -39,7 +39,7 @@ div.resultLandingPage{
     height:150px;
     font-size: 15pt;
     background-color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.85;
     /*background-color: #DCDCDC;*/
 }
 .bodyContent{
@@ -49,7 +49,7 @@ div.resultLandingPage{
     font-size: 15pt;
     /*background-color: #DCDCDC;*/
     background-color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 .infoBlock{
     margin-top:10px;
@@ -61,7 +61,7 @@ div.resultLandingPage{
     background-color: #ffffff;
     width:100%;
     border-spacing: 0px;
-    opacity: 0.8;
+    opacity: 0.85;
     /*margin-left: -17px;*/
 }
 .content{
@@ -98,5 +98,5 @@ body{
 
 #resultShowPage{
     background-color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.85;
 }
