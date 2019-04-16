@@ -38,11 +38,8 @@ router.get('/examSchedule',(req,res)=>{
     res.render('content/examSchedule');
 });
 
-router.get('/viewExamResult',(req,res)=>{
-    res.render('content/viewExamResult');
-});
-
 router.get('/moduleMapping',(req,res)=>{
+        req.app.locals.layout = 'modulemap';
    res.render('content/moduleMapping');
 });
 
