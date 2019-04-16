@@ -8,11 +8,14 @@
     font-variant: normal;
     font-weight: 700;
     line-height: 26.4px;
-    background-color: #DCDCDC;
+    /*background-color: #DCDCDC;*/
     text-align: center;
+    background-color: #ffffff;
+    opacity: 0.8;
 }
 div.bodyHeader{
     text-align: center;
+    opacity: 0.8;
 }
 div.resultHeader{
     margin-top: 15px;
@@ -25,22 +28,28 @@ div.resultHeader{
     font-variant: normal;
     font-weight: 700;
     line-height: 26.4px;
-    background-color: #DCDCDC;
+    /*background-color: #DCDCDC;*/
     text-align: center;
+    background-color: #ffffff;
+    opacity: 0.8;
 }
 div.resultLandingPage{
     padding-top: 15px;
     width:80%;
     height:150px;
     font-size: 15pt;
-    background-color: #DCDCDC;
+    background-color: #ffffff;
+    opacity: 0.8;
+    /*background-color: #DCDCDC;*/
 }
 .bodyContent{
     padding-top: 15px;
     width:80%;
     height:250px;
     font-size: 15pt;
-    background-color: #DCDCDC;
+    /*background-color: #DCDCDC;*/
+    background-color: #ffffff;
+    opacity: 0.8;
 }
 .infoBlock{
     margin-top:10px;
@@ -49,13 +58,19 @@ div.resultLandingPage{
 .suTable{
     font-size: 13pt;
     height:350px;
-    background-color: #DCDCDC;
+    background-color: #ffffff;
     width:100%;
     border-spacing: 0px;
+    opacity: 0.8;
     /*margin-left: -17px;*/
+}
+.content{
+    background-color: #ffffff;
+    opacity: 1;
 }
 .suTable .tr{
     width:99%
+
 }
 #blankCheckbox{
     margin-left: 5px;
@@ -72,4 +87,16 @@ div.resultLandingPage{
 li{
   background:url('http://templates.websitetemplatesonline.com/Action-Business-Theme/images/marker-1.gif')no-repeat 0px 16px;padding: 0px 0px 6px 12px;
     
+}
+body{
+    background-image: url("http://utown.nus.edu.sg/assets/Uploads/image-about-erc2.jpg") ;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#resultShowPage{
+    background-color: #ffffff;
+    opacity: 0.8;
 }
